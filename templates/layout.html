@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Se importa el archivo css-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title></title>
+  </head>
+  <body>
+    <!-- La navbar siempre estará presente en nuestra página-->
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a class="active home" href="{{ url_for('home') }}">Home</a></li>
+          <li class="logo">
+            <a href="{{ url_for('home') }}"> Jorge Del Barco</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Aquí se mostrará el contenido de nuestra página dependiendo del endpoint-->
+    {% block content %} {% endblock content %}
+  </body>
+</html>
