@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Se importa el archivo css-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:b|Open+Sans"
+    />
+
+    <title>Web portfolio</title>
+  </head>
+  <body>
+    <main id="grid-container">
+      <header id="navbar-section">
+        <div class="logo">LOGO</div>
+        <nav>
+          <ul>
+            <li>
+              <a href="{{ url_for('webpage') }}">Home</a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="hero-section">
+        <div class="hero-image">
+          <img
+            src="{{ url_for('static', filename='placeholderHeroImg.jpg') }}"
+            alt=""
+          />
+        </div>
+        <div class="hero-caption">
+          <h1>Hi! I'm Jorge</h1>
+          <p>
+            I am currently studying computer science at Tec de Monterrey CMTY
+            and this is my web portfolio. Explore and see if you are interested
+            in what I do!
+          </p>
+          <button>What I've Done</button>
+          <a href="#">Contact Me</a>
+        </div>
+      </section>
+
+      <section id="about-section">About</section>
+      <section id="projects-section">Projects</section>
+      <footer id="footer-section">Footer</footer>
+    </main>
+  </body>
+</html>
