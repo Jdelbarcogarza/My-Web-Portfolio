@@ -42,9 +42,55 @@ header{
   
 }
 
-nav ul{
+header .logo{
+  margin-left: 0.5rem;
+}
+
+/*
+header ul {
   
+  position: fixed;
+  top: -0.1rem;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #393e46;
+  min-width: 554px;
+}
+
+header li {
+  float: right;
+  margin-right: 1rem;
+}
+
+header li.logo {
+  float: left;
+  margin-left: 1rem;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0.8rem 0.8rem;
   text-decoration: none;
+  
+}
+*/
+
+nav ul{
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 0.5rem;
+
+}
+
+nav ul li{
+
+  margin: 0.5rem;
 
 }
 
