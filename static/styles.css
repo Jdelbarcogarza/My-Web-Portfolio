@@ -78,12 +78,42 @@ nav ul li a{
   text-decoration: none;
 }
 
-
+/*HERO SECTION*/
 #hero-section {
-  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  grid-template-rows: repeat(4,25%);
   grid-row:2;
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 5;
+}
+
+section div.hero-image{
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+section div.hero-image img{
+  z-index: -1;
+  filter: blur(1px);
+  height: 100%;
+  width: 100%;
+  
+}
+
+section div.hero-caption{
+  z-index: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  
+}
+
+.hero-caption{
+  color:white;
 }
 
 #about-section {

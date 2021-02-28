@@ -7,41 +7,53 @@
     <!--Se importa el archivo css-->
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='styles.css') }}"/>
-      <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Montserrat:b|Open+Sans">
-  
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:b|Open+Sans"
+    />
 
     <title>Web portfolio</title>
   </head>
   <body>
-    <!-- La navbar siempre estará presente en nuestra página-->
-
     <main id="grid-container">
       <header id="navbar-section">
-
         <div class="logo">LOGO</div>
-
         <nav>
           <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
             <li>
-              <a class="active home" href="{{ url_for('home') }}">Home</a>
+              <a href="{{ url_for('webpage') }}">Home</a>
             </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
 
+      <section id="hero-section">
+        <div class="hero-image">
+          <img
+            src="{{ url_for('static', filename='placeholderHeroImg.jpg') }}"
+            alt=""
+          />
+        </div>
+        <div class="hero-caption">
+          <h1>Hi! I'm Jorge</h1>
+          <p>
+            I am currently studying computer science at Tec de Monterrey CMTY
+            and this is my web portfolio. Explore and see if you are interested
+            in what I do!
+          </p>
+          <button>What I've Done</button>
+          <a href="#">Contact Me</a>
+        </div>
+      </section>
 
-
-      <section class="hero-section"></section>
-      <section class="about-section"></section>
-      <section class="projects-section"></section>
-      <footer class="footer-section"></footer>
-      
-    
+      <section id="about-section">About</section>
+      <section id="projects-section">Projects</section>
+      <footer id="footer-section">Footer</footer>
     </main>
   </body>
 </html>
