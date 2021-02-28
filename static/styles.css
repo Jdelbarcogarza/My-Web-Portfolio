@@ -8,7 +8,7 @@
 */
 
 * {
-  font-family: Montserrat, Open Sans;
+  font-family: Montserrat, 'Open Sans';
 }
 
 body {
@@ -45,6 +45,7 @@ header{
 nav ul{
   
   text-decoration: none;
+
 }
 
 
