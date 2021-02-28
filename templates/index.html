@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Se importa el archivo css-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"/>
+      <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Montserrat:b|Open+Sans">
+  
+
+    <title>Web portfolio</title>
+  </head>
+  <body>
+    <!-- La navbar siempre estará presente en nuestra página-->
+
+    <main id="grid-container">
+      <header id="navbar-section">
+        <nav>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+              <a class="active home" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="logo">
+              <a href="{{ url_for('home') }}">Jorge Del Barco</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero-section"></section>
+      <section class="about-section"></section>
+      <section class="projects-section"></section>
+      <footer class="footer-section"></footer>
+      
+    
+    </main>
+  </body>
+</html>
