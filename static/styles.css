@@ -13,7 +13,6 @@
 
 body {
   margin: 0;
-  background-color: #222831;
 }
 
 #grid-container{
@@ -23,18 +22,31 @@ body {
   margin: 0;
   padding: 0;
   grid-template-rows: 10% 25% 25% 25% 15%;
-  grid-template-columns: repeat(5,25%);
+  grid-template-columns: repeat(4,25%);
 }
 
 
 /*NAVABR*/
 #navbar-section {
   
-  background-color: red;
+  border: 1px solid red;
   grid-row:1;
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 5;
 }
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
+}
+
+nav ul{
+  
+  text-decoration: none;
+}
+
 
 #hero-section {
   background-color: yellow;
@@ -64,35 +76,7 @@ body {
   grid-column-end: 6;
 }
 
-header ul {
-  position: fixed;
-  top: -0.1rem;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #393e46;
-  min-width: 554px;
-}
 
-header li {
-  float: right;
-  margin-right: 1rem;
-}
-
-header li.logo {
-  float: left;
-  margin-left: 1rem;
-}
-
-li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 0.8rem 0.8rem;
-  text-decoration: none;
-}
 
 
 
