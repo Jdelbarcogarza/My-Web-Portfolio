@@ -21,7 +21,7 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
-  font-family: Montserrat, "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 }
 
 #grid-container {
@@ -43,6 +43,7 @@ body {
   grid-column-start: 1;
   grid-column-end: 5;
   height: 4rem;
+  z-index: 10;
 }
 
 header {
@@ -54,6 +55,7 @@ header {
 header .logo {
   margin-left: 0.5rem;
   background-color: mediumslateblue;
+  color:white;
 }
 
 nav ul {
@@ -63,7 +65,7 @@ nav ul {
   padding-left: 0;
   margin: 16px 8px 16px 8px;
 }
-
+/* ASEGURATE DE QUE SEAN PILL BUTTONS*/
 nav ul li {
   margin: 0.5rem;
   text-align: center;
@@ -72,6 +74,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+  color: white;
 }
 
 /*HERO SECTION*/
@@ -79,9 +82,10 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, 25%);
-  grid-row: 2;
+  grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 5;
+  z-index: 1;
 }
 
 section div.hero-image {
@@ -92,17 +96,10 @@ section div.hero-image {
 }
 
 section div.hero-image img {
-  z-index: -1;
-  filter: blur(2px);
+  z-index: -2;
+  filter: blur(1.5px);
   height: 100%;
   width: 100%;
-}
-
-.transparent-panel {
-  grid-row-start: 1;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 5;
 }
 
 section div.hero-caption {
@@ -111,12 +108,42 @@ section div.hero-caption {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 3;
-
   padding: 0 1rem 0 4rem;
 }
 
 .hero-caption {
   color: white;
+}
+
+.hero-caption h1{
+  font-family: Montserrat;
+}
+
+.hero-caption p{
+  letter-spacing: 2px;
+
+}
+
+.hero-caption a{
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+.hero-caption .full-button{
+  background-color: #0092CA;
+  border-radius: 25px;
+  padding: 5px 16px;
+  
+}
+
+.hero-caption .ghost-button{
+  border: 2px solid #0092CA;
+  border-radius: 25px;
+  padding: 5px 16px;
+  margin:16px;
+  color: #0092CA;
+  
 }
 
 #about-section {
