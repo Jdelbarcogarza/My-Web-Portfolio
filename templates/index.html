@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat:b|Open+Sans"
     />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
     <title>Web portfolio</title>
   </head>
@@ -34,20 +35,21 @@
 
       <section id="hero-section">
         <div class="hero-image">
-          <img
-            src="{{ url_for('static', filename='placeholderHeroImg.jpg') }}"
+         <img
+            src="{{ url_for('static', filename='placeholderHeroImgDark.jpg') }}"
             alt=""
           />
         </div>
+
         <div class="hero-caption">
-          <h1>Hi! I'm Jorge</h1>
+          <h1>Hi, I'm Jorge</h1>
           <p>
-            I am currently studying computer science at Tec de Monterrey CMTY
-            and this is my web portfolio. Explore and see if you are interested
-            in what I do!
+            I am currently studying computer science at Tec de Monterrey CMTY.
+            This is my web portfolio, so feel free to explore and take a look
+            at what I do!
           </p>
-          <button>What I've Done</button>
-          <a href="#">Contact Me</a>
+          <a class="full-button" href="#">See What I've done</a>
+          <a class="ghost-button" href="#">Contact Me</a>
         </div>
       </section>
 
