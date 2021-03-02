@@ -17,138 +17,125 @@ body {
   min-height: 100vh;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
-  font-family: Montserrat, 'Open Sans';
+  font-family: Montserrat, "Open Sans";
 }
 
-#grid-container{
+#grid-container {
   display: grid;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   grid-template-rows: 10% 25% 25% 25% 15%;
-  grid-template-columns: repeat(4,25%);
+  grid-template-columns: repeat(4, 25%);
 }
-
 
 /*NAVABR*/
 #navbar-section {
   /*Queda pendiente hacer que se quede fija mienrtas el usuario
   hace scroll*/
   border: 1px solid red;
-  grid-row:1;
+  grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 5;
-  height:4rem;
-  
+  height: 4rem;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  
 }
 
-header .logo{
+header .logo {
   margin-left: 0.5rem;
   background-color: mediumslateblue;
 }
 
-nav ul{
+nav ul {
   display: inline-flex;
   list-style: none;
   margin-right: 0.5rem;
   padding-left: 0;
   margin: 16px 8px 16px 8px;
-
 }
 
-nav ul li{
-
+nav ul li {
   margin: 0.5rem;
   text-align: center;
   text-decoration: none;
-
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
 }
 
 /*HERO SECTION*/
 #hero-section {
   display: grid;
-  grid-template-columns: repeat(4,25%);
-  grid-template-rows: repeat(4,25%);
-  grid-row:2;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+  grid-row: 2;
   grid-column-start: 1;
   grid-column-end: 5;
 }
 
-section div.hero-image{
+section div.hero-image {
   grid-row-start: 1;
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 5;
 }
 
-section div.hero-image img{
-
+section div.hero-image img {
   z-index: -1;
-  filter: blur(1px);
+  filter: blur(2px);
   height: 100%;
   width: 100%;
-  
 }
 
-.transparent-panel{
+.transparent-panel {
   grid-row-start: 1;
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 5;
 }
 
-section div.hero-caption{
-
+section div.hero-caption {
   z-index: 1;
   grid-row-start: 2;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 3;
-  
-  padding: 0 1rem 0 4rem;
 
+  padding: 0 1rem 0 4rem;
 }
 
-.hero-caption{
-  color:white;
+.hero-caption {
+  color: white;
 }
 
 #about-section {
   background-color: blue;
-  grid-row:3;
+  grid-row: 3;
   grid-column-start: 1;
   grid-column-end: 6;
 }
 
 #projects-section {
   background-color: purple;
-  grid-row:4;
+  grid-row: 4;
   grid-column-start: 1;
   grid-column-end: 6;
 }
 
 #footer-section {
   background-color: aquamarine;
-  grid-row:5;
+  grid-row: 5;
   grid-column-start: 1;
   grid-column-end: 6;
 }
-
-
-
-
-
