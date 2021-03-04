@@ -1,0 +1,71 @@
+@use 'gridContainer';
+@use 'colors';
+
+/*HERO SECTION*/
+#hero-section {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    z-index: 1;
+  }
+  
+  section div.hero-image {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  section div.hero-image img {
+    z-index: -2;
+    filter: blur(1.5px);
+    height: 100%;
+    width: 100%;
+  }
+  
+  section div.hero-caption {
+    z-index: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0 1rem 0 4rem;
+  }
+  
+  .hero-caption {
+    color: white;
+  }
+  
+  .hero-caption h1{
+    font-family: Montserrat;
+  }
+  
+  .hero-caption p{
+    letter-spacing: 2px;
+  
+  }
+  
+  .hero-caption a{
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+  }
+  
+  .hero-caption .full-button{
+    background-color: #0092CA;
+    border-radius: 25px;
+    padding: 5px 16px;
+    
+  }
+  
+  .hero-caption .ghost-button{
+    border: 2px solid #0092CA;
+    border-radius: 25px;
+    padding: 5px 16px;
+    margin:16px;
+    color: #0092CA;
+    
+  }
