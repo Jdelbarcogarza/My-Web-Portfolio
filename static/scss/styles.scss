@@ -4,8 +4,8 @@
 // sass --watch static/scss:static/css
 
 // Se importan los archivos parciales (modulos)
-@use 'gridContainer';
-@use 'colors';
+@use 'variables';
+@use 'globals';
 @use 'navbarSection';
 @use 'heroSection';
 @use 'aboutSection';
