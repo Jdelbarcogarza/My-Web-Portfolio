@@ -1,0 +1,9 @@
+@use 'gridContainer';
+@use 'colors';
+
+#footer-section {
+    background-color: aquamarine;
+    grid-row: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }

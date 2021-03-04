@@ -1,0 +1,15 @@
+
+// Este es el archivo a compilar de SASS
+// Este es el comando para compilar en css
+// sass --watch static/scss:static/css
+
+// Se importan los archivos parciales (modulos)
+@use 'gridContainer';
+@use 'colors';
+@use 'navbarSection';
+@use 'heroSection';
+@use 'aboutSection';
+@use 'projectsSection';
+@use 'footerSection';
+
+
