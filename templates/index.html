@@ -7,13 +7,16 @@
     <!--Se importa el archivo css-->
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='styles.css') }}"
+      href="{{ url_for('static', filename='css/styles.css') }}"
     />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat:b|Open+Sans"
     />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
 
     <title>Web portfolio</title>
   </head>
@@ -35,9 +38,9 @@
 
       <section id="hero-section">
         <div class="hero-image">
-         <img
-            src="{{ url_for('static', filename='placeholderHeroImgDark.jpg') }}"
-            alt=""
+          <img
+            src="{{ url_for('static', filename='img/placeholderHeroImgDark.jpg') }}"
+            alt="Macbook Pro with coding editor open"
           />
         </div>
 
@@ -45,15 +48,64 @@
           <h1>Hi, I'm Jorge</h1>
           <p>
             I am currently studying computer science at Tec de Monterrey CMTY.
-            This is my web portfolio, so feel free to explore and take a look
-            at what I do!
+            This is my web portfolio, so feel free to explore and take a look at
+            what I do!
           </p>
           <a class="full-button" href="#">See What I've done</a>
           <a class="ghost-button" href="#">Contact Me</a>
         </div>
       </section>
 
-      <section id="about-section">About</section>
+      <section id="about-section">
+        <article>
+          <h2>First Year Computer Science Student</h2>
+
+          <p>
+            I am looking forward to working inside the tech industry and develop
+            software that is crucial to businesses and governments. With my
+            career goals in mind, I keep on learning new things every day to
+            make of me a valuable asset to any employer out there.
+          </p>
+
+          <p>
+            So far, I've developed projects with several programming languages
+            and technologies such as:
+          </p>
+          <ul>
+            <li>
+              <img
+                src="{{ url_for('static', filename='svg/python-logo.svg') }}"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='svg/cpp-logo.svg') }}"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='svg/html-logo.svg') }}"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='svg/css-logo.svg') }}"
+                alt=""
+              />
+            </li>
+          </ul>
+        </article>
+
+        <figure class="picture">
+          <img
+            src="{{ url_for('static',filename='img/yo original.jpg') }}"
+            alt="Me with my french bulldog Jeb"
+          />
+        </figure>
+      </section>
       <section id="projects-section">Projects</section>
       <footer id="footer-section">Footer</footer>
     </main>
