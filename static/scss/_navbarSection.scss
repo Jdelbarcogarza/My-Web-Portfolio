@@ -3,48 +3,54 @@
 
 /*NAVABR*/
 #navbar-section {
-  border: 1px solid variables.$blue;
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 5;
-  height: 4em;
+  height: 6em;
   z-index: 10;
+  overflow: hidden;
+  display: flex;
+  font-size: variables.$sixteen-px;
 }
 
 header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 
   .logo {
-    margin-left: 1em;
+    margin-left: 1.2em;
     background-color: mediumslateblue;
     color: white;
   }
-}
 
-nav {
+  nav {
+    height: inherit;
+    display: flex;
+    ul {
+      height: 4em;
+      display: inherit;
+      list-style: none;
+      padding-left: 0;
+      align-items: center;
+      margin-right:8px;
 
-  height: inherit;
+      li:hover {
+        background-color: variables.$black;
+      }
 
-  ul {
-    height: 4em;
-    display: inline-flex;
-    list-style: none;
-    margin-right: 1em;
-    padding-left: 0;
-    margin: 16px 8px 16px 8px;
-
-    
-    li {
-      /* ASEGURATE DE QUE SEAN PILL BUTTONS*/
-      margin: 0.5rem;
-      text-align: center;
-      text-decoration: none;
-
-      a {
+      li {
+        /* ASEGURATE DE QUE SEAN PILL BUTTONS*/
+        background-color: variables.$gray;
+        border-radius: 25px;
+        text-align: center;
         text-decoration: none;
-        color: white;
+        margin: 0px 8px;
+        padding: 8px 16px;
+        width: 6em;
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }

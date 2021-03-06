@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  overflow: hidden visible;
 }
 
 body {
@@ -24,47 +25,56 @@ body {
   padding: 0;
   grid-template-rows: 10% 25% 25% 25% 15%;
   grid-template-columns: repeat(4, 25%);
+  overflow: hidden;
 }
 
 /*NAVABR*/
 #navbar-section {
-  border: 1px solid #0092CA;
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 5;
-  height: 4em;
+  height: 6em;
   z-index: 10;
+  overflow: hidden;
+  display: flex;
+  font-size: 16px;
 }
 
 header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .logo {
-  margin-left: 1em;
+  margin-left: 1.2em;
   background-color: mediumslateblue;
   color: white;
 }
-
-nav {
+header nav {
   height: inherit;
+  display: flex;
 }
-nav ul {
+header nav ul {
   height: 4em;
-  display: inline-flex;
+  display: inherit;
   list-style: none;
-  margin-right: 1em;
   padding-left: 0;
-  margin: 16px 8px 16px 8px;
+  align-items: center;
+  margin-right: 8px;
 }
-nav ul li {
+header nav ul li:hover {
+  background-color: #222831;
+}
+header nav ul li {
   /* ASEGURATE DE QUE SEAN PILL BUTTONS*/
-  margin: 0.5rem;
+  background-color: #393E46;
+  border-radius: 25px;
   text-align: center;
   text-decoration: none;
+  margin: 0px 8px;
+  padding: 8px 16px;
+  width: 6em;
 }
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: white;
 }
