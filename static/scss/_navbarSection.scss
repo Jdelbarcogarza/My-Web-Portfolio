@@ -3,43 +3,49 @@
 
 /*NAVABR*/
 #navbar-section {
-  /*Queda pendiente hacer que se quede fija mienrtas el usuario
-    hace scroll*/
-  border: 1px solid variables.$details-color;
+  border: 1px solid variables.$blue;
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 5;
-  height: 4rem;
+  height: 4em;
   z-index: 10;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+
+  .logo {
+    margin-left: 1em;
+    background-color: mediumslateblue;
+    color: white;
+  }
 }
 
-header .logo {
-  margin-left: 0.5rem;
-  background-color: mediumslateblue;
-  color: white;
-}
+nav {
 
-nav ul {
-  display: inline-flex;
-  list-style: none;
-  margin-right: 0.5rem;
-  padding-left: 0;
-  margin: 16px 8px 16px 8px;
-}
-/* ASEGURATE DE QUE SEAN PILL BUTTONS*/
-nav ul li {
-  margin: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-}
+  height: inherit;
 
-nav ul li a {
-  text-decoration: none;
-  color: white;
+  ul {
+    height: 4em;
+    display: inline-flex;
+    list-style: none;
+    margin-right: 1em;
+    padding-left: 0;
+    margin: 16px 8px 16px 8px;
+
+    
+    li {
+      /* ASEGURATE DE QUE SEAN PILL BUTTONS*/
+      margin: 0.5rem;
+      text-align: center;
+      text-decoration: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
 }
