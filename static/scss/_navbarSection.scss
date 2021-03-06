@@ -1,11 +1,11 @@
-@use 'gridContainer';
-@use 'colors';
+@use 'globals';
+@use 'variables';
 
 /*NAVABR*/
 #navbar-section {
   /*Queda pendiente hacer que se quede fija mienrtas el usuario
     hace scroll*/
-  border: 1px solid colors.$details-color;
+  border: 1px solid variables.$details-color;
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 5;
